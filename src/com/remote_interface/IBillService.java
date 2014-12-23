@@ -10,7 +10,7 @@ public interface IBillService extends Remote{
 	 * @param no
 	 * @throws RemoteException
 	 */
-	public void modBillState(String no)throws RemoteException;
+	public void modBillState(String no,String operator)throws RemoteException;
 	/**s
 	 * 获取所有待审核的单子   格式：【id$time$from$sdesc】   desc格式【type@大概描述】
 	 * @return
@@ -56,7 +56,7 @@ public interface IBillService extends Remote{
 	 * @param no
 	 * @throws RemoteException
 	 */
-	public void hongchongBill(String no)throws RemoteException;
+	public void hongchongBill(String no,String operator)throws RemoteException;
 	
 	
 }
