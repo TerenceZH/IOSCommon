@@ -43,5 +43,33 @@ public interface IAccountService extends Remote{
 	 * @throws RemoteException
 	 */
 	public void modAccount(String no,String name,String operator)throws RemoteException;
+	
+	/**
+	 * 添加付款单
+	 * @param customer
+	 * @param time
+	 * @param operator
+	 * @param list     每一个元素就是一个账单  格式 :  account$money$desc
+	 * @throws RemoteException
+	 */
+	public void addPayBill(String customer,String time,String operator,ArrayList<String>list)throws RemoteException;
+	/**
+	 * 现金费用单
+	 * @param account
+	 * @param time
+	 * @param operator
+	 * @param list 每一个元素就是一个账单  格式 :  item$money$desc
+	 * @throws RemoteException
+	 */
+	public void addCashPayBill(String account,String time,String operator,ArrayList<String>list)throws RemoteException;
+	/**
+	 * 添加收款单
+	 * @param customer
+	 * @param time
+	 * @param operator
+	 * @param list每一个元素就是一个账单  格式 :  account$money$desc
+	 * @throws RemoteException
+	 */
+	public void addGetBill(String customer,String time,String operator,ArrayList<String>list)throws RemoteException;
 
 }

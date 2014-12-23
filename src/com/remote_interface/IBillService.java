@@ -42,13 +42,21 @@ public interface IBillService extends Remote{
 	 * 经营里程表
 	 * @param stime
 	 * @param etime
-	 * @param type  0进货
+	 * @param type  0进货1进货退货2销售3销售退货
 	 * @param cusno
 	 * @param bus
 	 * @param ware
-	 * @return   格式：编号$类型$内容
+	 * @return   格式：编号$类型（string）$内容
 	 * @throws RemoteException
 	 */
 	public ArrayList<String> getSaleLicheng(String stime, String etime, int type,
 			String cusno, String bus, String ware)throws RemoteException;
+	/**
+	 * 红冲一个单子 dialog
+	 * @param no
+	 * @throws RemoteException
+	 */
+	public void hongchongBill(String no)throws RemoteException;
+	
+	
 }
