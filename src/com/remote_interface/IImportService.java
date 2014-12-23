@@ -21,12 +21,12 @@ public interface IImportService extends Remote{
 	 * @param customerNo
 	 * @param warehouse
 	 * @param operator
-	 * @param info  = no+" "+c.getName()+" "+c.getStyle()+" 数量: "+quantity+" 单价: "+c.getInPrice()+" 总价: "+quantity*c.getInPrice()+";";
+	 * @param list  no+","+quantity+","+inprice+","+total
 	 * @param total
 	 * @param desc
 	 * @throws RemoteException
 	 */
-	public void addImportBill(String customerNo,String warehouse,String operator,String info,double total,String desc,String time)throws RemoteException;
+	public void addImportBill(String customerNo,String warehouse,String operator,ArrayList<String> list,double total,String desc,String time)throws RemoteException;
 	/**
 	 * 根据编号获得bill
 	 * @param no

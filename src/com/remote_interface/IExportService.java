@@ -23,12 +23,12 @@ public interface IExportService extends Remote{
 	 * @param customerNo
 	 * @param warehouse
 	 * @param operator
-	 * @param info  = no+" "+c.getName()+" "+c.getStyle()+" 数量: "+quantity+" 单价: "+c.getInPrice()+" 总价: "+quantity*c.getInPrice()+";";
+	 * @param list  
 	 * @param total
 	 * @param desc
 	 * @throws RemoteException
 	 */
-	public void addExportBill(String customerNo,String warehouse,String operator,String info,double total,
+	public void addExportBill(String customerNo,String warehouse,String operator,ArrayList<String>list,double total,
 			double discount,double djq,double total2,String desc,String time)throws RemoteException;
 	/**
 	 * 根据编号获得bill
