@@ -23,7 +23,7 @@ public interface IExportService extends Remote{
 	 * @param customerNo
 	 * @param warehouse
 	 * @param operator
-	 * @param list  
+	 * @param list  no+","+quantity+","+inprice+","+total
 	 * @param total
 	 * @param desc
 	 * @throws RemoteException

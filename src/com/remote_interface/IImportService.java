@@ -21,7 +21,7 @@ public interface IImportService extends Remote{
 	 * @param customerNo
 	 * @param warehouse
 	 * @param operator
-	 * @param list  no+","+quantity+","+inprice+","+total
+	 * @param list  geshi :no+","+quantity+","+inprice+","+total
 	 * @param total
 	 * @param desc
 	 * @throws RemoteException
